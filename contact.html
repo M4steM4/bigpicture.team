@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="author" content="BigPictureTeam">
+  <meta name="description" content="BigPictureTeam">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="title.png">
+  <meta property="og:title" content="BigPictureTeam">
+  <meta property="og:description" content="광고의 큰그림을 그리다, 빅픽처팀.">
+  <title>About BicPictureTeam</title>
+  <link rel="shoutcut ion" href="#">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
+</head>
+<body>
+  <ul class="navbar nav-top">
+    <li class="active"><a class="bpt" href="main.html"><img src="logo.png" alt=""></a></li>
+    <li><a class="" href="about.html">ABOUT</a></li>
+    <li><a class="" href="services.html">SERVICES</a></li>
+    <li><a class="" href="portfolio.html">PORTFOLIO</a></li>
+    <li><a class="" href="culture.html">CULTURE</a></li>
+    <li><a class="" href="contact.html">CONTACT US</a></li>
+  </ul>
+<!-- Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="about col-sm-10">
+      <div class="col-sm-6">
+        <h1>Map</h1>
+        <div id="map"></div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Address</h2>
+        <p>asdasd: asasd</p>
+        <p>asdasd: asasd</p>
+        <p>asdasd: asasd</p>
+        <p>asdasd: asasd</p>
+        <p>asdasd: asasd</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Copyright -->
+  <nav class="navbar navbar-inverse nav-bottom">
+      <div class="navbar-header text">
+        <h1>Copyright @ 2015 BigPictureTeam</h1>
+      </div>
+  </nav>
+</body>
+<script src="./src/app.js"></script>
+<script>
+function initMap() {
+ var uluru = {lat: 37.49453, lng: 127.03785};
+ var map = new google.maps.Map(document.getElementById('map'), {
+   zoom: 18,
+   center: uluru
+ });
+ var marker = new google.maps.Marker({
+   position: uluru,
+   map: map
+ });
+}
+console.log("AIzaSyB_HTuQbDl7zKij3tcBIW-LIQZY2LCgi1E");
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+</script>
+</html>
